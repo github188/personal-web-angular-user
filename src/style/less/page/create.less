@@ -1,0 +1,137 @@
+.navbar{
+	.create{
+		> p {
+			line-height: 18px;
+			margin: 0;
+			> small {
+				font-size:12px;
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes pulse {
+  0% {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+	-webkit-transform: scale3d(1.05, 1.05, 1.05);
+	transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+	-webkit-transform: scale3d(1.05, 1.05, 1.05);
+	transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.create{
+  #currentMeetingDurationLabel{
+    margin-left: 1.2em;
+    width:30%;
+  }
+	.toolbar {
+		//height: 50px;
+
+		.block-left{
+			background-color: #1A4296;
+			text-align: center;
+			padding: 7px;
+			width:20%;
+		}
+		.badge{
+			background-color: #02b802;
+			width:30px;
+			height: 30px;
+			line-height: 28px;
+			-webkit-background-clip: padding-box; 
+			-moz-background-clip:    padding; 
+			background-clip:         padding-box;
+		}
+		.btn-add{
+			width:80%;
+			background-color: #E74C52;
+			text-align: center;
+			> a {
+				display: inline-block;
+			}
+		}
+	}
+	.nameBar{
+		position: fixed;
+		top: 88px;
+		z-index: 999;
+		right: 0px;
+		height: ~"-webkit-calc(100% - 44px*3)";
+		height: ~"calc(100% - 44px*3)";
+		overflow-y: auto;
+		ul{
+			margin: 0;
+			padding: 0 5px;
+			background: #f5f5f5;
+			height: 100%;
+			ol{
+				margin: 0;
+				padding:0;
+				line-height: 100%;
+				text-transform: uppercase;
+				text-align: center;
+				height: ~"-webkit-calc(100%/26)";
+				height: ~"calc(100%/26)";
+				min-height: 1em;
+			  a{
+				display: inline-block;
+				width: 2em;
+				height: 100%;
+				line-height: 1.5em;
+			  }
+			}
+		}
+	}
+	.item-text{
+		height:21px;
+	}
+  .list-block {
+	li{
+	  padding-right: 1.6em;
+	}
+	.all{
+	  padding-bottom: 44px;
+	}
+  }
+}

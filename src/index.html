@@ -1,0 +1,23 @@
+<!doctype html>
+<html id="ng-app">
+<head>
+    <script src="/vendors/angular/angular1.2.4.js"></script>
+    <script src="/script/controller/main.js"></script>
+</head>
+<body>
+<div ng-controller="InvoiceCtrl">
+    <b>Invoice:</b>
+    <br>
+    <br>
+    <table>
+        <tr><td>Quantity</td><td>Cost</td></tr>
+        <tr>
+            <td><input type="integer" min="0" ng-model="qty" required ></td>
+            <td><input type="number" ng-model="cost" required ></td>
+        </tr>
+    </table>
+    <hr>
+    <b>Total:</b> {{qty * cost | currency}}
+</div>
+</body>
+</html>

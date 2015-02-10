@@ -1,0 +1,52 @@
+.page-vmr {
+  .content-block {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position:relative;
+  }
+  #vmr-date {
+    text-align: center;
+  }
+  #vmr-selecter{
+    position: relative;
+    overflow: hidden;
+    > div{
+      webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+    .timesub{
+      text-align: center;
+      transition:top .5s;
+      -webkit-transition:top .5s;
+      z-index: 99;
+      background-color: #ccc;
+    }
+    .vmrsub{
+      line-height: 1.5em;
+      background-color: #ccc;
+      text-align: center;
+      transition:left .5s;
+      -webkit-transition:left .5s;
+      z-index: 100;
+    }
+    .sub,.cell{
+      background-color: #D7F8FA;
+      border: 1px solid #DFDFDF;
+      transition:all .5s;
+      -webkit-transition:all .5s;
+    }
+    .cell{
+      background-color: #4276B2;
+      z-index: 98
+    }
+  }
+  .toolbar {
+    .list-block {
+      background: #275D9B;
+    }
+  }
+}
